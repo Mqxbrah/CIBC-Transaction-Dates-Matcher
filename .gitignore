@@ -5,7 +5,7 @@ node_modules/
 dist/
 release/
 
-# OS filez
+# OS files
 .DS_Store
 Thumbs.db
 
