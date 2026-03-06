@@ -324,6 +324,10 @@ export default function CIBCParser() {
         .step-active { background:#4f8ef7; color:#fff; }
         .step-done { background:#1e3a1e; color:#4ade80; }
         .step-idle { background:#1a1a1a; color:#555; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }
       `}</style>
 
       <div style={{ WebkitAppRegion: "drag", height: 52 }} />
