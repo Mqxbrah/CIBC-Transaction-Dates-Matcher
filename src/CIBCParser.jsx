@@ -309,7 +309,7 @@ export default function CIBCParser() {
   const visibleRows = matched ? matched.filter(m => m.score > 0) : [];
 
   return (
-    <div style={{ fontFamily: "monospace", background: "#111", minHeight: "100vh", color: "#eee", padding: 24 }}>
+    <div style={{ fontFamily: "monospace", background: "#111", minHeight: "100vh", color: "#eee" }}>
       <style>{`
         * { box-sizing: border-box; }
         textarea:focus { outline: 2px solid #4f8ef7; }
@@ -326,7 +326,10 @@ export default function CIBCParser() {
         .step-idle { background:#1a1a1a; color:#555; }
       `}</style>
 
-      <h2 style={{ margin: "0 0 4px", fontSize: 18 }}>CIBC Transaction Dates Matcher</h2>
+      <div style={{ WebkitAppRegion: "drag", height: 52 }} />
+
+      <div style={{ padding: "0 24px 24px 24px" }}>
+        <h2 style={{ margin: "0 0 4px", fontSize: 18 }}>CIBC Transaction Dates Matcher</h2>
 
       <div style={{ margin: "10px 0 24px", display: "flex", gap: 4, alignItems: "center" }}>
         {[["ui","1. Paste UI Data"],["csv","2. Paste Posted Data"],["results","3. Results"],["verify","4. Verify"]].map(([s, label]) => {
@@ -474,6 +477,7 @@ export default function CIBCParser() {
         </div>
       )}
 
+      </div>
     </div>
   );
 }
